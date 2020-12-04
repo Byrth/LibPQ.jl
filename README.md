@@ -1,3 +1,12 @@
+# Fork purpose
+
+This fork exists to remove Infinity.jl from LibPQ.jl so the copy-left nature of its current GNU-GPL license will not opensource software made with LibPQ.jl.
+It reverts LibPQ.jl to its earlier infinity-handling behavior from v1.3.0.
+It does *not* remove Intervals.jl because Infinity.jl is not a dependency there (it is an extra) and thus will not be included in compiled code.
+
+I have an alert set for LibPQ.jl tags and will try to keep this updated until such a time when Infinity.jl is [relicensed, removed, or made optional](https://github.com/invenia/LibPQ.jl/issues/209).
+I never intend to merge this to invenia/LibPQ.jl master, so I will be fairly irresponsible and do things like commit directly to master here.
+
 # LibPQ
 
 LibPQ.jl is a Julia wrapper for the PostgreSQL `libpq` C library.
